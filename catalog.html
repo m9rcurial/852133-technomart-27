@@ -7,19 +7,17 @@
   <body>
     <header class="main-header">
       <div class="header-top">
-        <div class="header-logo">
-          <a href="index.html">
-            <img src="img/logo-header.svg" width="220" height="47" alt="Логотип магазина Техномарт">
-          </a>
-        </div>
+        <a class="header-logo" href="#">
+          <img src="img/logo-header.svg" width="220" height="47" alt="Логотип магазина Техномарт">
+        </a>
         <div class="searchfield-wrap">
           <span>searchform</span>
         </div>
         <div class="bookmark-wrap">
-          <button class="bookmark" type="button">Закладки: 0</button>
+          <a class="bookmark" href="#">Закладки: 0</a>
         </div>
         <div class="cart-wrap">
-          <button class="cart" type="button">Корзина: 10</button>
+          <a class="cart" href="#">Корзина: 10</a>
         </div>
         <div class="order-wrap">
           <a class="order" href="#">Оформить заказ</a>
@@ -31,18 +29,12 @@
         </p>
       </div>
       <div class="header-contacts">
-        <div class="phone-wrap">
-          <a class="phone" href="tel: +78125550555">+7 (812) 555-05-55</a>
-        </div>
-        <div class="adds-wrap">
-          <address class="adds">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-        </div>
+        <a class="phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <address class="adds">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
       </div>
       <div class="login-wrap-catalog">
-        <div class="login-link-wrap">
-          <a class="login-link" href="#">Равшан Джамшутович</a>
-          <a class="login-exit" href="#" aria-label="выйти из профиля">x</a>
-        </div>
+        <a class="login-link" href="#">Равшан Джамшутович</a>
+        <a class="login-exit" href="#" aria-label="выйти из профиля">x</a>
         <a href="#">Мои заказы</a>
         <a href="#">Личный кабинет</a>
       </div>
@@ -73,17 +65,19 @@
       </nav>
     </header>
     <main class="container">
-      <ul class="crumbs-list">
-        <li class="crumbs-item">
-          <a href="#">каталог</a>
-        </li>
-        <li class="crumbs-item">
-          <a href="#">инструмент</a>
-        </li>
-        <li class="crumbs-item">
-          <a>перфораторы</a>
-        </li>
-      </ul>
+      <nav class="secondary-navigation">
+        <ul class="crumbs-list">
+          <li class="crumbs-item">
+            <a href="#">каталог</a>
+          </li>
+          <li class="crumbs-item">
+            <a href="#">инструмент</a>
+          </li>
+          <li class="crumbs-item">
+            <a>перфораторы</a>
+          </li>
+        </ul>
+      </nav>
       <div class="title-catalog-wrap">
         <h1 class="title-catalog">Перфораторы</h1>
       </div>
@@ -184,14 +178,12 @@
     </main>
     <footer class="main-footer">
       <div class="footer-top">
-        <div class="footer-logo">
-          <a href="index.html">
-            <img src="img/logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
-          </a>
-        </div>
+        <a class="footer-logo" href="#">
+          <img src="img/logo-footer.svg" width="220" height="68" alt="Логотип магазина Техномарт">
+        </a>
         <div class="footer-contacts">
           <address class="adds-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a class="phone-footer" href="tel: +78125550555">+7 (812) 555-05-55</a>
+          <a class="phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
         <nav class="footer-navigation">
           <ul class="footer-top-list">
@@ -245,11 +237,11 @@
         </ul>
         <div class="feedback-footer">
           <p>Обратная связь:</p>
-          <a class="feedback-mail" href="https://htmlacademy.ru/contacts" target="_blank">mail@htmlacademy.ru</a>
+          <a class="feedback-mail" href="https://htmlacademy.ru/contacts" target="_blank" rel="noopener">mail@htmlacademy.ru</a>
         </div>
         <div class="developed">
           <p>Разработано —</p>
-          <a class="developed-mail" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">htmlacademy.ru</a>
+          <a class="developed-mail" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noopener">htmlacademy.ru</a>
         </div>
       </div>
     </footer>
