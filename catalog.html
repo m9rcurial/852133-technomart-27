@@ -11,7 +11,9 @@
           <img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
         </a>
         <div class="searchfield-wrap">
-          <span>searchform</span>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="search-field" type="search" placeholder="Поиск:">
+          </form>
         </div>
         <div class="bookmark-wrap">
           <a class="bookmark" href="#">Закладки: 0</a>
@@ -107,6 +109,50 @@
             </li>
           </ul>
         </div>
+        <!--range-->
+
+
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="maker-set">
+            <legend>Производители:</legend>
+            <ul class="maker-list">
+              <li class="maker-item">
+                <input class="maker-checkbox" type="checkbox" name="bosch" id="bosch-checkbox" checked>
+                <label for="bosch-checkbox">Bosch</label>
+              </li>
+              <li class="maker-item">
+                <input class="maker-checkbox" type="checkbox" name="interskol" id="interskol-checkbox">
+                <label for="bosch-checkbox">Интерскол</label>
+              </li>
+              <li class="maker-item">
+                <input class="maker-checkbox" type="checkbox" name="makita" id="makita-checkbox" checked>
+                <label for="makita-checkbox">Makita</label>
+              </li>
+              <li class="maker-item">
+                <input class="maker-checkbox" type="checkbox" name="dewalt" id="dewalt-checkbox">
+                <label for="dewalt-checkbox">Dewalt</label>
+              </li>
+              <li class="maker-item">
+                <input class="maker-checkbox" type="checkbox" name="hitachi" id="hitachi-checkbox">
+                <label for="hitachi-checkbox">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="nutrition-set">
+            <legend>Питание:</legend>
+            <ul class="nutrition-list">
+              <li class="nutrition-item">
+                <input class="nutrition-radio" type="radio" name="nutrition-group" value="battery" id="battery-radio" checked>
+                <label for="battery-radio">Аккумуляторные:</label>
+              </li>
+              <li class="nutrition-item">
+                <input class="nutrition-radio" type="radio" name="nutrition-group" value="network" id="network-radio">
+                <label for="network-radio">Аккумуляторные:</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter-btn" type="submit">Показать</button>
+        </form>
       </section>
       <section class="product">
         <h2 class="visually-hidden">Выбор перфораторов</h2>
@@ -319,5 +365,22 @@
         </div>
       </div>
     </footer>
+    <section class="cart-block">
+      <h2 class="visually-hidden">Корзина</h2>
+      <div class="cart-top">
+        <button class="cart-close" type="button" aria-label="закрыть корзину">x</button>
+        <p class="cart-description">Товар добавлен в корзину!</p>
+      </div>
+      <div class="cart-bot">
+        <ul class="cart-list">
+          <li  class="cart-item">
+            <a class="cart-btn" href="#">оформить заказ</a>
+          </li>
+          <li class="cart-item">
+            <a class="cart-btn" href="#">продолжить покупки</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </body>
 </html>

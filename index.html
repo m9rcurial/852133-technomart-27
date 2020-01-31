@@ -11,7 +11,9 @@
           <img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
         </a>
         <div class="searchfield-wrap">
-          <span>searchform</span>
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+            <input class="search-field" type="search" placeholder="Поиск:">
+          </form>
         </div>
         <div class="bookmark-wrap">
           <a class="bookmark" href="#">Закладки: 0</a>
@@ -91,8 +93,8 @@
               <a class="advantages-slider-link" href="catalog.html">открыть католог</a>
               <img src="img/drill.png" width="620" height="266" alt="дрели">
             </div>
-            <button class="advantages-slider-btn-left" type="button">x</button>
-            <button class="advantages-slider-btn-right" type="button">x</button>
+            <button class="advantages-slider-btn-left" type="button" aria-label="назад">x</button>
+            <button class="advantages-slider-btn-right" type="button" aria-label="вперед">x</button>
           </div>
         </div>
         <div class="advantages-right-wrap">
@@ -300,75 +302,113 @@
           <button class="contacts-btn" type="button">Заблудились? Напишите нам!</button>
         </section>
       </div>
-      <footer class="main-footer">
-        <div class="footer-top">
-          <a class="footer-logo" href="#">
-            <img src="img/logo-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
-          </a>
-          <div class="footer-contacts">
-            <address class="adds-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-            <a class="phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
-          </div>
-          <nav class="footer-navigation">
-            <ul class="footer-top-list">
-              <li class="footer-top-item">
-                <a href="#">Компания</a>
-              </li>
-              <li class="footer-top-item">
-                <a href="#">Новости</a>
-              </li>
-              <li class="footer-top-item">
-                <a href="catalog.html">Каталог</a>
-              </li>
-              <li class="footer-top-item">
-                <a href="#">Доставка</a>
-              </li>
-              <li class="footer-top-item">
-                <a href="#">Контакты</a>
-              </li>
-            </ul>
-            <ul class="footer-bot-list">
-              <li class="footer-bot-list">
-                <a href="#">Материалы</a>
-              </li>
-              <li class="footer-bot-list">
-                <a href="#">Техника</a>
-              </li>
-              <li class="footer-bot-list">
-                <a href="#">Инструменты</a>
-              </li>
-              <li class="footer-bot-list">
-                <a href="#">Спецпредложения</a>
-              </li>
-            </ul>
-          </nav>
+    </main>
+    <footer class="main-footer">
+      <div class="footer-top">
+        <a class="footer-logo" href="#">
+          <img src="img/logo-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
+        </a>
+        <div class="footer-contacts">
+          <address class="adds-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
+          <a class="phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a>
         </div>
-        <div class="footer-bot">
-          <div class="copyright">
-            <p>© 2010–2019 Компания «Техномарт»</p>
-            <p>Все права защищены</p>
-          </div>
-          <ul class="social-btn-list">
-            <li class="social-btn-item">
-              <a href="#" aria-label="Вконтакте">vk</a>
+        <nav class="footer-navigation">
+          <ul class="footer-top-list">
+            <li class="footer-top-item">
+              <a href="#">Компания</a>
             </li>
-            <li class="social-btn-item" >
-              <a href="#" aria-label="Фейсбук">fb</a>
+            <li class="footer-top-item">
+              <a href="#">Новости</a>
             </li>
-            <li class="social-btn-item">
-              <a href="#" aria-label="Инстаграм">inst</a>
+            <li class="footer-top-item">
+              <a href="catalog.html">Каталог</a>
+            </li>
+            <li class="footer-top-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="footer-top-item">
+              <a href="#">Контакты</a>
             </li>
           </ul>
-          <div class="feedback-footer">
-            <p>Обратная связь:</p>
-            <a class="feedback-mail" href="https://htmlacademy.ru/contacts" target="_blank" rel="noopener">mail@htmlacademy.ru</a>
-          </div>
-          <div class="developed">
-            <p>Разработано —</p>
-            <a class="developed-mail" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noopener">htmlacademy.ru</a>
-          </div>
+          <ul class="footer-bot-list">
+            <li class="footer-bot-list">
+              <a href="#">Материалы</a>
+            </li>
+            <li class="footer-bot-list">
+              <a href="#">Техника</a>
+            </li>
+            <li class="footer-bot-list">
+              <a href="#">Инструменты</a>
+            </li>
+            <li class="footer-bot-list">
+              <a href="#">Спецпредложения</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bot">
+        <div class="copyright">
+          <p>© 2010–2019 Компания «Техномарт»</p>
+          <p>Все права защищены</p>
         </div>
-      </footer>
-    </main>
+        <ul class="social-btn-list">
+          <li class="social-btn-item">
+            <a href="#" aria-label="Вконтакте">vk</a>
+          </li>
+          <li class="social-btn-item" >
+            <a href="#" aria-label="Фейсбук">fb</a>
+          </li>
+          <li class="social-btn-item">
+            <a href="#" aria-label="Инстаграм">inst</a>
+          </li>
+        </ul>
+        <div class="feedback-footer">
+          <p>Обратная связь:</p>
+          <a class="feedback-mail" href="https://htmlacademy.ru/contacts" target="_blank" rel="noopener">mail@htmlacademy.ru</a>
+        </div>
+        <div class="developed">
+          <p>Разработано —</p>
+          <a class="developed-mail" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" rel="noopener">htmlacademy.ru</a>
+        </div>
+      </div>
+    </footer>
+    <section class="cart-block">
+      <h2 class="visually-hidden">Корзина</h2>
+      <div class="cart-top">
+        <button class="cart-close" type="button" aria-label="закрыть корзину">x</button>
+        <p class="cart-description">Товар добавлен в корзину!</p>
+      </div>
+      <div class="cart-bot">
+        <ul class="cart-list">
+          <li  class="cart-item">
+            <a class="cart-btn" href="#">оформить заказ</a>
+          </li>
+          <li class="cart-item">
+            <a class="cart-btn" href="#">продолжить покупки</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="feedback-modal">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="fedback-top">
+          <button class="feedback-close" type="button" aria-label="закрыть форму отправки обратной связи">x</button>
+          <input class="name-field" type="text" id="name-field" placeholder="Имя Фамилия">
+          <label for="name-field">Ваше имя:</label>
+          <input class="email-field" type="email" id="email-field" placeholder="email@example.com">
+          <label for="email-field">Ваш e-mail:</label>
+          <textarea class="text-field" id=text-field cols="50" rows="7" placeholder="В свободной форме"></textarea>
+          <label for="text-field">Текс письма:</label>
+        </div>
+        <div class="feedback-bot">
+          <button class="feedback-btn" type="submit">отправить</button>
+        </div>
+      </form>
+    </section>
+    <div class="map-wrap">
+      <button class="close-map" type="button" aria-label="закрыть карту">x</button>
+      <img src="img/big-map.png" width="970" height="476" alt="Большая Конюшенная, д. 19/8">
+    </div>
   </body>
 </html>
