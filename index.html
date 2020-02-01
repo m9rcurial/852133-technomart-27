@@ -8,10 +8,10 @@
     <header class="main-header">
       <div class="header-top">
         <a class="header-logo" href="#">
-          <img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
+          <img src="img/logo-header.png" width="109" height="19" alt="Логотип магазина Техномарт">
         </a>
         <div class="searchfield-wrap">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
             <input class="search-field" type="search" placeholder="Поиск:">
           </form>
         </div>
@@ -306,7 +306,7 @@
     <footer class="main-footer">
       <div class="footer-top">
         <a class="footer-logo" href="#">
-          <img src="img/logo-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
+          <img src="img/logo-footer.png" width="138" height="23" alt="Логотип магазина Техномарт">
         </a>
         <div class="footer-contacts">
           <address class="adds-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -372,7 +372,7 @@
         </div>
       </div>
     </footer>
-    <section class="cart-block">
+    <section class="cart-modal">
       <h2 class="visually-hidden">Корзина</h2>
       <div class="cart-top">
         <button class="cart-close" type="button" aria-label="закрыть корзину">x</button>
@@ -394,19 +394,25 @@
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="POST">
         <div class="fedback-top">
           <button class="feedback-close" type="button" aria-label="закрыть форму отправки обратной связи">x</button>
-          <input class="name-field" type="text" id="name-field" placeholder="Имя Фамилия">
-          <label for="name-field">Ваше имя:</label>
-          <input class="email-field" type="email" id="email-field" placeholder="email@example.com">
-          <label for="email-field">Ваш e-mail:</label>
-          <textarea class="text-field" id=text-field cols="50" rows="7" placeholder="В свободной форме"></textarea>
-          <label for="text-field">Текс письма:</label>
+          <div class="name-field-wrap">
+            <input class="name-field" type="text" id="name-field" placeholder="Имя Фамилия">
+            <label for="name-field">Ваше имя:</label>
+          </div>
+          <div class="email-field-wrap">
+            <input class="email-field" type="email" id="email-field" placeholder="email@example.com">
+            <label for="email-field">Ваш e-mail:</label>
+          </div>
+          <div class="text-field-wrap">
+            <textarea class="text-field" id=text-field cols="50" rows="7" placeholder="В свободной форме"></textarea>
+            <label for="text-field">Текс письма:</label>
+          </div>
         </div>
         <div class="feedback-bot">
           <button class="feedback-btn" type="submit">отправить</button>
         </div>
       </form>
     </section>
-    <div class="map-wrap">
+    <div class="map-modal">
       <button class="close-map" type="button" aria-label="закрыть карту">x</button>
       <img src="img/big-map.png" width="970" height="476" alt="Большая Конюшенная, д. 19/8">
     </div>
