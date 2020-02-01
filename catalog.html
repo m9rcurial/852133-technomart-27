@@ -8,10 +8,10 @@
     <header class="main-header">
       <div class="header-top">
         <a class="header-logo" href="#">
-          <img src="img/logo-header.png" width="220" height="47" alt="Логотип магазина Техномарт">
+          <img src="img/logo-header.png" width="109" height="19" alt="Логотип магазина Техномарт">
         </a>
         <div class="searchfield-wrap">
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="POST">
+          <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
             <input class="search-field" type="search" placeholder="Поиск:">
           </form>
         </div>
@@ -109,10 +109,26 @@
             </li>
           </ul>
         </div>
-        <!--range-->
-
-
-        <form class="filter-form" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="filter-range">
+          <h3 class="range-title">Цена:</h3>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="stripe"></div>
+            </div>
+            <div class="range-switch-left"></div>
+            <div class="range-switch-right"></div>
+          </div>
+          <div class="range-price">
+            <div class="range-price-min-wrap">
+              <input class="range-price-min" type="number"  name="min" value="0">
+            </div>
+            <span class="range-dash">-</span>
+            <div class="range-price-max-wrap">
+              <input class="range-price-max" type="number" name="max" value="30000">
+            </div>
+          </div>
+        </div>
+        <form class="filter-form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="maker-set">
             <legend>Производители:</legend>
             <ul class="maker-list">
@@ -299,7 +315,7 @@
     <footer class="main-footer">
       <div class="footer-top">
         <a class="footer-logo" href="#">
-          <img src="img/logo-footer.png" width="220" height="68" alt="Логотип магазина Техномарт">
+          <img src="img/logo-footer.png" width="138" height="23" alt="Логотип магазина Техномарт">
         </a>
         <div class="footer-contacts">
           <address class="adds-footer">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
@@ -365,7 +381,7 @@
         </div>
       </div>
     </footer>
-    <section class="cart-block">
+    <section class="cart-modal">
       <h2 class="visually-hidden">Корзина</h2>
       <div class="cart-top">
         <button class="cart-close" type="button" aria-label="закрыть корзину">x</button>
