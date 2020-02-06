@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -19,7 +23,7 @@
           <a class="bookmark" href="#">Закладки: 0</a>
         </div>
         <div class="cart-wrap">
-          <a class="cart" href="#">Корзина: 10</a>
+          <a class="cart cart-catalog" href="#">Корзина: 10</a>
         </div>
         <div class="order-wrap">
           <a class="order" href="#">Оформить заказ</a>
@@ -37,8 +41,8 @@
       <div class="login-wrap-catalog">
         <a class="login-link" href="#">Равшан Джамшутович</a>
         <a class="login-exit" href="#" aria-label="выйти из профиля">x</a>
-        <a href="#">Мои заказы</a>
-        <a href="#">Личный кабинет</a>
+        <a class="login-nav" href="#">Мои заказы</a>
+        <a class="login-nav" href="#">Личный кабинет</a>
       </div>
       <nav class="main-navigation">
         <ul class="nav-list">
@@ -122,7 +126,6 @@
             <div class="range-price-min-wrap">
               <input class="range-price-min" type="number"  name="min" value="0">
             </div>
-            <span class="range-dash">-</span>
             <div class="range-price-max-wrap">
               <input class="range-price-max" type="number" name="max" value="30000">
             </div>
@@ -177,7 +180,7 @@
             <a href="#">
               <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 3000</a></h3>
             <span class="price">22500 Р.</span>
             <span class="discount">15500 Р.</span>
             <div class="buy-wrap">
@@ -189,7 +192,7 @@
             <a href="#">
               <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 6000</a></h3>
             <span class="price">30500 Р.</span>
             <span class="discount">25500 Р.</span>
             <div class="buy-wrap">
@@ -201,7 +204,7 @@
             <a href="#">
               <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 2000</a></h3>
             <span class="discount">12500 Р.</span>
             <span class="new">new</span>
             <div class="buy-wrap">
@@ -213,7 +216,7 @@
             <a href="#">
               <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 3000</a></h3>
             <span class="price">22500 Р.</span>
             <span class="discount">15500 Р.</span>
             <div class="buy-wrap">
@@ -225,7 +228,7 @@
             <a href="#">
               <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 6000</a></h3>
             <span class="price">30500 Р.</span>
             <span class="discount">25500 Р.</span>
             <span class="new">new</span>
@@ -238,7 +241,7 @@
             <a href="#">
               <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 2000</a></h3>
             <span class="discount">12500 Р.</span>
             <div class="buy-wrap">
               <a class="buy" href="#">купить</a>
@@ -249,7 +252,7 @@
             <a href="#">
               <img src="img/bfg-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 3000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 3000</a></h3>
             <span class="price">22500 Р.</span>
             <span class="discount">15500 Р.</span>
             <span class="new">new</span>
@@ -262,7 +265,7 @@
             <a href="#">
               <img src="img/bfg-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 6000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 6000</a></h3>
             <span class="price">30500 Р.</span>
             <span class="discount">25500 Р.</span>
             <div class="buy-wrap">
@@ -274,7 +277,7 @@
             <a href="#">
               <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
-            <h3><a href="#">Перфоратор BOSCH BFG 2000</a></h3>
+            <h3><a class="product-item-title" href="#">Перфоратор BOSCH BFG 2000</a></h3>
             <span class="discount">12500 Р.</span>
             <div class="buy-wrap">
               <a class="buy" href="#">купить</a>
@@ -390,10 +393,10 @@
       <div class="cart-bot">
         <ul class="cart-list">
           <li  class="cart-item">
-            <a class="cart-btn" href="#">оформить заказ</a>
+            <a class="cart-btn button" href="#">оформить заказ</a>
           </li>
           <li class="cart-item">
-            <a class="cart-btn" href="#">продолжить покупки</a>
+            <a class="resume-btn" href="#">продолжить покупки</a>
           </li>
         </ul>
       </div>
