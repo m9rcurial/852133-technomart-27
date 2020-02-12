@@ -134,7 +134,7 @@
             <span class="discount">25500 Р.</span>
             <div class="buy-wrap">
               <a class="buy" href="#">купить</a>
-              <button class="bookmarks-btn" type="button">в закладки</button>
+              <a class="bookmarks-btn" href="#">в закладки</a>
             </div>
           </li>
           <li class="product-item">
@@ -146,7 +146,7 @@
             <span class="discount">15500 Р.</span>
             <div class="buy-wrap">
               <a class="buy" href="#">купить</a>
-              <button class="bookmarks-btn" type="button">в закладки</button>
+              <a class="bookmarks-btn" href="#">в закладки</a>
             </div>
           </li>
           <li class="product-item">
@@ -158,10 +158,10 @@
             <span class="discount">25500 Р.</span>
             <div class="buy-wrap">
               <a class="buy" href="#">купить</a>
-              <button class="bookmarks-btn" type="button">в закладки</button>
+              <a class="bookmarks-btn" href="#">в закладки</a>
             </div>
           </li>
-          <li class="product-item">
+          <li class="product-item special-item">
             <a href="#">
               <img src="img/bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             </a>
@@ -169,7 +169,7 @@
             <span class="discount">12500 Р.</span>
             <div class="buy-wrap">
               <a class="buy" href="#">купить</a>
-              <button class="bookmarks-btn" type="button">в закладки</button>
+              <a class="bookmarks-btn" href="#">в закладки</a>
             </div>
           </li>
         </ul>
@@ -177,7 +177,7 @@
       <section class="producer">
         <div class="producer-title-wrap">
           <h2 class="producer-title">Популярные производители:</h2>
-          <a class="producer-link button" href="#">Все производители</a>
+          <a class="popular-product-title-link button" href="#">Все производители</a>
         </div>
         <ul class="producer-list">
           <li class="producer-item">
@@ -223,56 +223,62 @@
         </ul>
       </section>
       <section class="service">
-        <h2 class="service-title">Сервисы</h2>
-        <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
-        <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <div class="service-slider">
-          <ul class="service-slider-list">
-            <li class="service-slider-item">
-              <button class="service-slider-btn" type="button">Доставка</button>
-            </li>
-            <li class="service-slider-item">
-              <button class="service-slider-btn" type="button">Гарантия</button>
-            </li>
-            <li class="service-slider-item">
-              <button class="service-slider-btn" type="button">Кредит</button>
-            </li>
-          </ul>
-          <div class="slide-delivery">
-            <h3 class="slide-delivery-title">Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо <br>
-              к вашему подъезду совершенно бесплатно! <br>
-              Ведь мы неплохо заработаем, <br>
-              поднимая его на ваш этаж!
-            </p>
-            <div class="delivery-wrap">
-              <img src="img/delivery.png" width="468" height="261" alt="Доставка">
-            </div>
+        <div class="service-wrapper">
+          <div class="service-title-wrapper">
+            <h2 class="service-title">Сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
+            <p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
-          <div class="slide-guarantee">
-            <h3 class="slide-guarantee-title">Гарантия</h3>
-            <p>
-              Если купленный у нас товар поломается или заискрит, <br>
-              а также в случае пожара, спровоцированного его возгоранием, <br>
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
-              сгоревший товар на новый. <br>
-              Дом уж восстановите как-нибудь сами.
-            </p>
-            <div class="guarantee-wrap">
-              <img src="img/guarantee.png" width="389" height="283" alt="Гарантия">
+          <div class="service-slider">
+            <ul class="service-slider-list">
+              <li class="service-slider-item">
+                <button class="service-slider-btn" type="button">Доставка</button>
+              </li>
+              <li class="service-slider-item">
+                <button class="service-slider-btn" type="button">Гарантия</button>
+              </li>
+              <li class="service-slider-item">
+                <button class="service-slider-btn" type="button">Кредит</button>
+              </li>
+            </ul>
+            <div class="slide-delivery">
+              <div class="slide-delivery-wrapper">
+                <h3 class="slide-delivery-title">Доставка</h3>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо <br>
+                  к вашему подъезду совершенно бесплатно! <br>
+                  Ведь мы неплохо заработаем, <br>
+                  поднимая его на ваш этаж!
+                </p>
+              </div>
+              <div class="delivery-wrap">
+                <img src="img/delivery.png" width="468" height="261" alt="Доставка">
+              </div>
             </div>
-          </div>
-          <div class="slide-credit">
-            <h3 class="slide-credit-title">Кредит</h3>
-            <p>
-              Залезть в долговую яму стало проще! <br>
-              Кредитные консультанты придут вам на помощь.
-            </p>
-            <div class="credit-wrap">
-              <img src="img/credit.png" width="465" height="285" alt="Кредит">
+            <div class="slide-guarantee">
+              <h3 class="slide-guarantee-title">Гарантия</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит, <br>
+                а также в случае пожара, спровоцированного его возгоранием, <br>
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем <br>
+                сгоревший товар на новый. <br>
+                Дом уж восстановите как-нибудь сами.
+              </p>
+              <div class="guarantee-wrap">
+                <img src="img/guarantee.png" width="389" height="283" alt="Гарантия">
+              </div>
             </div>
-            <a class="slide-credit-link" href="#">Отправить заявку</a>
+            <div class="slide-credit">
+              <h3 class="slide-credit-title">Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще! <br>
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <div class="credit-wrap">
+                <img src="img/credit.png" width="465" height="285" alt="Кредит">
+              </div>
+              <a class="slide-credit-link" href="#">Отправить заявку</a>
+            </div>
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header-catalog">
+    <header class="main-header">
       <div class="header-top">
         <div class="center">
           <a class="header-logo" href="#">
@@ -89,30 +89,32 @@
       <div class="title-catalog-wrap">
         <h1 class="title-catalog">Перфораторы</h1>
       </div>
-      <div class="filter-title-wrap">
-        <h2 class="filter-title">Фильтр:</h2>
-      </div>
-      <div class="sorting-wrap">
-        <h3>Сортировка</h3>
-        <ul class="sorting-list">
-          <li class="sorting-item">
-            <a class="sorting-link" href="#">по цене</a>
-          </li>
-          <li class="sorting-item">
-            <a class="sorting-link" href="#">по типу</a>
-          </li>
-          <li class="sorting-item">
-            <a class="sorting-link" href="#">по функционалу</a>
-          </li>
-        </ul>
-        <ul class="option-list">
-          <li class="option-item">
-            <a class="option-link" href="#">по возрастанию</a>
-          </li>
-          <li class="option-item">
-            <a class="option-link" href="#">по убыванию</a>
-          </li>
-        </ul>
+      <div class="sorting-wrapper">
+        <div class="filter-title-wrap">
+          <h2 class="filter-title">Фильтр:</h2>
+        </div>
+        <div class="sorting-wrap">
+          <h3>Сортировка</h3>
+          <ul class="sorting-list">
+            <li class="sorting-item">
+              <a class="sorting-link" href="#">по цене</a>
+            </li>
+            <li class="sorting-item">
+              <a class="sorting-link" href="#">по типу</a>
+            </li>
+            <li class="sorting-item">
+              <a class="sorting-link" href="#">по функционалу</a>
+            </li>
+          </ul>
+          <ul class="option-list">
+            <li class="option-item">
+              <a class="option-link" href="#">+</a>
+            </li>
+            <li class="option-item">
+              <a class="option-link" href="#">-</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="filter-product-wrapper">
         <section class="filter">
@@ -174,7 +176,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="filter-btn catalog-btn" type="submit">Показать</button>
+            <button class="filter-btn" type="submit">Показать</button>
           </form>
         </section>
         <section class="product">
@@ -189,7 +191,7 @@
               <span class="discount">15500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -201,7 +203,7 @@
               <span class="discount">25500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -212,7 +214,7 @@
               <span class="discount">12500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -224,7 +226,7 @@
               <span class="discount">15500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -236,7 +238,7 @@
               <span class="discount">25500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -247,7 +249,7 @@
               <span class="discount">12500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -259,7 +261,7 @@
               <span class="discount">15500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -271,7 +273,7 @@
               <span class="discount">25500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
             <li class="product-item">
@@ -282,7 +284,7 @@
               <span class="discount">12500 Р.</span>
               <div class="buy-wrap">
                 <a class="buy" href="#">купить</a>
-                <button class="bookmarks-btn" type="button">в закладки</button>
+                <a class="bookmarks-btn" href="#">в закладки</a>
               </div>
             </li>
           </ul>
@@ -293,28 +295,30 @@
           <a class="pagination-link current">1</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link catalog-btn" href="#">2</a>
+          <a class="pagination-link" href="#">2</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link catalog-btn" href="#">3</a>
+          <a class="pagination-link" href="#">3</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link catalog-btn" href="#">следующая</a>
+          <a class="pagination-link" href="#">следующая</a>
         </li>
       </ul>
       <section class="description-perforator">
-        <h2 class="description-title">Пара слов о перфораторах</h2>
-        <p>
-          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
-          бетоне и камне
-        </p>
-        <p>
-          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
-          шуруповерта и отбойного молотка.
-        </p>
-        <p>
-          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-        </p>
+        <div class="description-perforator-wrap">
+          <h2 class="description-title">Пара слов о перфораторах</h2>
+          <p>
+            Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче,
+            бетоне и камне.
+          </p>
+          <p>
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
+            шуруповерта и отбойного молотка.
+          </p>
+          <p>
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+          </p>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
